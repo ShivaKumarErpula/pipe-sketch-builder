@@ -1,73 +1,109 @@
-# Welcome to your Lovable project
+🚀 Welcome to Your Pipeline Editor (DAG Builder)
 
-## Project info
+🧩 Project Overview
+This project is a Pipeline Editor (DAG Builder) built using React + TypeScript + Vite. It allows users to:
 
-**URL**: https://lovable.dev/projects/bb18ad28-94a9-4f37-92e8-66a1c6f75aad
+✅ Add nodes dynamically
 
-## How can I edit this code?
+✅ Create directional connections (edges) with validation rules
 
-There are several ways of editing your application.
+✅ Delete nodes and edges using keyboard controls
 
-**Use Lovable**
+✅ Validate if the structure forms a valid DAG
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/bb18ad28-94a9-4f37-92e8-66a1c6f75aad) and start prompting.
+✅ Automatically arrange nodes using a Dagre-based layout
 
-Changes made via Lovable will be committed automatically to this repo.
+✅ Preview the graph’s structure as JSON
 
-**Use your preferred IDE**
+⚙️ Technologies Used
+✅ React
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+✅ TypeScript
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+✅ Vite
 
-Follow these steps:
+✅ Tailwind CSS
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+✅ React Flow
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+✅ shadcn/ui – for clean UI components
 
-# Step 3: Install the necessary dependencies.
-npm i
+✅ Dagre – for automatic graph layout
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+🛠️ How I Built It
+I created this project using Lovable.dev, which provides a no-hassle environment to develop full-stack apps with clean design and instant deployment.
+
+You can edit this project using:
+
+Directly in Lovable (prompt-based builder)
+
+Any IDE (via Git clone + push)
+
+GitHub web editor
+
+GitHub Codespaces
+
+💻 Local Development Instructions
+Make sure you have Node.js and npm installed. Then:
+
+bash
+Copy
+Edit
+# 1. Clone the repo
+git clone <your-git-url>
+
+# 2. Go to the project directory
+cd <project-name>
+
+# 3. Install dependencies
+npm install
+
+# 4. Start development server
 npm run dev
-```
+🧪 DAG Validation Rules
+A valid DAG must:
 
-**Edit a file directly in GitHub**
+Contain at least 2 nodes
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Have no cycles
 
-**Use GitHub Codespaces**
+Disallow self-loops
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Only allow edges from outgoing → incoming
 
-## What technologies are used for this project?
+Ensure each node is connected to at least one edge
 
-This project is built with:
+📐 Features
+➕ Add Node with button
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+➖ Delete Node/Edge with keyboard
 
-## How can I deploy this project?
+🔄 Draw directional edges manually
 
-Simply open [Lovable](https://lovable.dev/projects/bb18ad28-94a9-4f37-92e8-66a1c6f75aad) and click on Share -> Publish.
+✅ Real-time DAG validation status
 
-## Can I connect a custom domain to my Lovable project?
+📐 Auto Layout with dagre
 
-Yes, you can!
+🧾 JSON preview of the pipeline
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+🎨 Clean, intuitive UI using Tailwind + shadcn/ui
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+🌐 Deployment
+You can deploy and share your app directly from Lovable:
+
+Click on Share → Publish
+
+Optionally, connect a custom domain via Project → Settings → Domains
+
+📸 Screenshots & Demo
+(Include GIFs or screenshots of your app here)
+
+📚 Challenges Faced
+Implementing strict DAG validation (no cycles, self-loops, etc.)
+
+Controlling custom edge connections using React Flow’s event system
+
+Integrating auto-layout cleanly using Dagre and fitView()
+
+Maintaining a modular, readable codebase using TypeScript
+
