@@ -1,5 +1,3 @@
-🚀 Welcome to Your Pipeline Editor (DAG Builder)
-
 🧩 Project Overview
 This project is a Pipeline Editor (DAG Builder) built using React + TypeScript + Vite. It allows users to:
 
@@ -32,16 +30,6 @@ This project is a Pipeline Editor (DAG Builder) built using React + TypeScript +
 
 🛠️ How I Built It
 I created this project using Lovable.dev, which provides a no-hassle environment to develop full-stack apps with clean design and instant deployment.
-
-You can edit this project using:
-
-Directly in Lovable (prompt-based builder)
-
-Any IDE (via Git clone + push)
-
-GitHub web editor
-
-GitHub Codespaces
 
 💻 Local Development Instructions
 Make sure you have Node.js and npm installed. Then:
